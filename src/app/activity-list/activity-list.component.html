@@ -2,3 +2,21 @@ Total Distance: {{ totalDistance }}
 Total Activities: {{ totalActivities}}
 First Date: {{ firstDate | date: 'longDate' }}
 
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Comments</th>
+      <th>Date</th>
+      <th>Distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let activity of activities">
+      <td>{{ activity.name }}</td>
+      <td>{{ activity.comments }}</td>
+      <td>{{ activity.date | date: "yyyy-MM-dd" }}</td>
+      <td>{{ activity.distance }}</td>
+    </tr>
+  </tbody>
+</table>

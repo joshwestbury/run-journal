@@ -1,8 +1,8 @@
 export interface IActivity {
   id: number;
   name: string;
-  date: Date;
   comments?: string;
+  date: Date;
   distance?: number;
   gpxData: string;
 }
