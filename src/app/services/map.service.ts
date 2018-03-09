@@ -33,7 +33,7 @@ export class MapService {
       // tslint:disable-next-line:max-line-length
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
       maxZoom: 18,
-      id: 'mapbox.dark', // these are changeable. See MapBox API documentation. See https://www.mapbox.com/api-documentation/#maps
+      id: 'mapbox.pencil', // these are changeable. See MapBox API documentation. See https://www.mapbox.com/api-documentation/#maps
       accessToken: apiToken
     }).addTo(map);
 

@@ -22,7 +22,9 @@
     <tbody>
       <tr *ngFor="let activity of activities">
         <td>
-          {{ activity.name }}
+          <a [routerLink]="['/runs', activity.id]">
+            {{ activity.name }}
+          </a>
         </td>
         <td>{{ activity.comments }}</td>
         <td>{{ activity.date | date: "yyyy-MM-dd" }}</td>
